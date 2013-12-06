@@ -2,8 +2,8 @@ yum-repoforge Cookbook
 ============
 
 The yum-repoforge cookbook takes over management of the default
-repositoryids that ship with CentOS systems. It allows attribute
-manipulation of base updates extras centosplus contrib.
+repositoryids used by repoforge. It allows attribute manipulation of
+`rpmforge`, `rpmforge-extras`, and `rpmforge-testing`
 
 Requirements
 ------------
@@ -91,11 +91,6 @@ node.default['yum']['rpmforge']['enabled'] = true
 node.default['yum']['rpmforge']['mirrorlist'] = nil
 node.default['yum']['rpmforge']['baseurl'] = 'https://internal.example.com/centos/6/os/x86_64'
 node.default['yum']['rpmforge']['sslverify'] = false
-node.default['yum']['updates']['enabled'] = true
-node.default['yum']['updates']['mirrorlist'] = nil
-node.default['yum']['updates']['baseurl'] = 'https://internal.example.com/centos/6/updates/x86_64'
-node.default['yum']['updates']['sslverify'] = false
-
 include_recipe 'yum-repoforge'
 ```
 
