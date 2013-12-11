@@ -1,5 +1,3 @@
-# Encoding: utf-8
-
 default['yum']['rpmforge-extras']['repositoryid'] = 'rpmforge-extras'
 default['yum']['rpmforge-extras']['description'] = 'RHEL $releasever - RPMforge.net - extras'
 case platform_version.to_i

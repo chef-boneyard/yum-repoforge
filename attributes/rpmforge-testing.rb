@@ -1,5 +1,3 @@
-# Encoding: utf-8
-
 default['yum']['rpmforge-testing']['repositoryid'] = 'rpmforge-testing'
 default['yum']['rpmforge-testing']['description'] = 'RHEL $releasever - RPMforge.net - testing'
 case platform_version.to_i
