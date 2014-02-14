@@ -19,6 +19,7 @@ default['yum']['rpmforge']['repositoryid'] = 'rpmforge'
 default['yum']['rpmforge']['description'] = 'RHEL $releasever - RPMforge.net - dag'
 default['yum']['rpmforge']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge'
 default['yum']['rpmforge']['enabled'] = true
+default['yum']['rpmforge']['managed'] = true
 default['yum']['rpmforge']['gpgcheck'] = true
 default['yum']['rpmforge']['gpgkey'] = 'http://apt.sw.be/RPM-GPG-KEY.dag.txt'
 ```
@@ -28,6 +29,7 @@ default['yum']['rpmforge-extras']['repositoryid'] = 'rpmforge'
 default['yum']['rpmforge-extras']['description'] = 'RHEL $releasever - RPMforge.net - extras'
 default['yum']['rpmforge-extras']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-extras'
 default['yum']['rpmforge-extras']['enabled'] = true
+default['yum']['rpmforge-extras']['managed'] = true
 default['yum']['rpmforge-extras']['gpgcheck'] = true
 default['yum']['rpmforge-extras']['gpgkey'] = 'http://apt.sw.be/RPM-GPG-KEY.dag.txt'
 ```
@@ -37,6 +39,7 @@ default['yum']['rpmforge-testing']['repositoryid'] = 'rpmforge-testing'
 default['yum']['rpmforge-testing']['description'] = 'RHEL $releasever - RPMforge.net - testing'
 default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-testing'
 default['yum']['rpmforge-testing']['enabled'] = true
+default['yum']['rpmforge-testing']['managed'] = true
 default['yum']['rpmforge-testing']['gpgcheck'] = true
 default['yum']['rpmforge-testing']['gpgkey'] = 'http://apt.sw.be/RPM-GPG-KEY.dag.txt'
 ```
@@ -78,6 +81,7 @@ the following in a recipe:
 
 ```
 node.default['yum']['rpmforge']['enabled'] = true
+node.default['yum']['rpmforge']['managed'] = true
 
 include_recipe 'yum-repoforge'
 ```
