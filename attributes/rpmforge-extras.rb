@@ -3,9 +3,7 @@ default['yum']['rpmforge-extras']['description'] = 'RHEL $releasever - RPMforge.
 case platform_version.to_i
 when 5
   default['yum']['rpmforge-extras']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el5/mirrors-rpmforge-extras'
-when 6
-  default['yum']['rpmforge-extras']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-extras'
-when 2013
+when 6, 2013, 2014
   default['yum']['rpmforge-extras']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-extras'
 end
 default['yum']['rpmforge-extras']['enabled'] = true
