@@ -10,11 +10,11 @@ describe 'yum-repoforge::default' do
       end.converge(described_recipe)
     end
 
-    %w{
+    %w(
       rpmforge
       rpmforge-extras
       rpmforge-testing
-      }.each do |repo|
+    ).each do |repo|
       it "creates yum_repository[#{repo}}]" do
         expect(chef_run).to create_yum_repository(repo)
       end

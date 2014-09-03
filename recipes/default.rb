@@ -18,7 +18,7 @@
 
 include_recipe 'yum-epel'
 
-%w{ rpmforge rpmforge-extras rpmforge-testing }.each do |repo|
+%w(rpmforge rpmforge-extras rpmforge-testing).each do |repo|
   if node['yum'][repo]['managed']
     yum_repository repo do
       description node['yum'][repo]['description']
