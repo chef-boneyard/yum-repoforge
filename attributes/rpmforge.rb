@@ -5,6 +5,8 @@ when 5
   default['yum']['rpmforge']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el5/mirrors-rpmforge'
 when 6, 2013, 2014
   default['yum']['rpmforge']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge'
+when 7
+  default['yum']['rpmforge']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el7/mirrors-rpmforge'
 end
 default['yum']['rpmforge']['enabled'] = true
 default['yum']['rpmforge']['managed'] = true
