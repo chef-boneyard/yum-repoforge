@@ -1,6 +1,9 @@
 yum-repoforge Cookbook CHANGELOG
-======================
-This file is used to list changes made in each version of the yum-repoforge cookbook.
+================================
+
+v0.5.0 (2014-01-07)
+-------------------
+- Adding centos-7 support
 
 v0.4.0 (2014-09-02)
 -------------------
