@@ -1,6 +1,10 @@
 yum-repoforge Cookbook CHANGELOG
 ================================
 
+v0.5.1 (2015-04-15)
+-------------------
+- Amazon Linux 2015.03
+
 v0.5.0 (2014-01-07)
 -------------------
 - Adding centos-7 support
