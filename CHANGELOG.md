@@ -1,6 +1,10 @@
 yum-repoforge Cookbook CHANGELOG
 ================================
 
+v0.5.3 (2015-06-21)
+-------------------
+- Updating to depend on ~> 3.2
+
 v0.5.2 (2015-06-21)
 -------------------
 - Support for EL7
