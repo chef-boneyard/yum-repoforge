@@ -1,5 +1,6 @@
 yum-repoforge Cookbook CHANGELOG
 ================================
+This file is used to list changes made in each version of the yum-repoforge cookbook.
 
 v0.5.3 (2015-06-21)
 -------------------
