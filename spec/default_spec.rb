@@ -19,6 +19,5 @@ describe 'yum-repoforge::default' do
         expect(chef_run).to create_yum_repository(repo)
       end
     end
-
   end
 end
