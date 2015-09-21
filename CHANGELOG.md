@@ -2,9 +2,23 @@ yum-repoforge Cookbook CHANGELOG
 ================================
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+v0.5.4 (2015-09-21)
+-------------------
+- Added Chef standard Rubocop file and resolved all warnings
+- Added Kitchen CI platforms
+- Add supported platforms to the metadata
+- Fixed the package install test bats file to pass
+- Added Chef standard chefignore and .gitignore files
+- Updated Berksfile to 3.X format
+- Updated and expanded development dependencies in the Gemfile
+- Added contributing, testing, and maintainers docs
+- Added platform requirements to the readme
+- Added Travis and cookbook version badges to the readme
+- Update Chefspec to 4.X format
+
 v0.5.3 (2015-06-21)
 -------------------
-- Updating to depend on ~> 3.2
+- Updating to depend on yum ~> 3.2
 
 v0.5.2 (2015-06-21)
 -------------------
