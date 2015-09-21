@@ -2,7 +2,7 @@ name 'yum-repoforge'
 maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
-description 'Installs/Configures yum-repoforge'
+description 'Installs and onfigures yum-repoforge aka RPMforge'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.5.4'
 source_url 'https://github.com/chef-cookbooks/yum-repoforge' if respond_to?(:source_url)
