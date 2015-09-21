@@ -17,7 +17,7 @@ Requirements
 * Chef 11+
 
 #### Cookbooks
-* yum version 3.0.0 or higher
+* yum version 3.2.0 or higher
 * yum-epel
 
 
