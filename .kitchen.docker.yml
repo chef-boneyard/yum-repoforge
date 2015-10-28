@@ -22,6 +22,6 @@ suites:
   run_list:
   - recipe[yum-repoforge::default]
 
-- name: includerecipe
-  run_list:
-  - recipe[yum-repoforge-wrapper::default]
+# - name: includerecipe
+#   run_list:
+#   - recipe[yum-repoforge-wrapper::default]

@@ -17,9 +17,9 @@ env:
   - INSTANCE=default-centos-5
   - INSTANCE=default-centos-6
   - INSTANCE=default-centos-7
-  - INSTANCE=includerecipe-centos-5
-  - INSTANCE=includerecipe-centos-6
-  - INSTANCE=includerecipe-centos-7
+  # - INSTANCE=includerecipe-centos-5
+  # - INSTANCE=includerecipe-centos-6
+  # - INSTANCE=includerecipe-centos-7
 
 # Don't `bundle install`
 install: echo "skip bundle install"
