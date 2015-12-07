@@ -80,7 +80,7 @@ default_attributes(
 
 To enable the rpmforge repository with a wrapper cookbook, place the following in a recipe:
 
-```
+```ruby
 node.default['yum']['rpmforge']['enabled'] = true
 node.default['yum']['rpmforge']['managed'] = true
 
@@ -90,7 +90,7 @@ include_recipe 'yum-repoforge'
 ## More Examples
 Point the base and updates repositories at an internally hosted server.
 
-```
+```ruby
 node.default['yum']['rpmforge']['enabled'] = true
 node.default['yum']['rpmforge']['mirrorlist'] = nil
 node.default['yum']['rpmforge']['baseurl'] = 'https://internal.example.com/centos/6/os/x86_64'
