@@ -1,6 +1,9 @@
 # yum-repoforge Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+## v0.5.7 (2015-12-09)
+- Fixing minor typo: nil -> nil?
+
 ## v0.5.6 (2015-12-09)
 - Adding unless nil checks to properties in recipe to avoid Chef 13
   deprecation warnings
