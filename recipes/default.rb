@@ -23,7 +23,7 @@ include_recipe 'yum-epel'
 
   yum_repository repo do
     baseurl node['yum'][repo]['baseurl'] unless node['yum'][repo]['baseurl'].nil?
-    cost node['yum'][repo]['cost'] unless node['yum'][repo]['cost'].nil
+    cost node['yum'][repo]['cost'] unless node['yum'][repo]['cost'].nil?
     description node['yum'][repo]['description'] unless node['yum'][repo]['description'].nil?
     enabled node['yum'][repo]['enabled'] unless node['yum'][repo]['enabled'].nil?
     enablegroups node['yum'][repo]['enablegroups'] unless node['yum'][repo]['enablegroups'].nil?
