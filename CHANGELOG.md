@@ -1,6 +1,9 @@
 # yum-repoforge Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+## v0.6.0 (2016-03-23)
+- Add support for the 2016 Amazon releases
+
 ## v0.5.7 (2015-12-09)
 - Fixing minor typo: nil -> nil?
 
