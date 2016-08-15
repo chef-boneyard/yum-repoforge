@@ -8,11 +8,11 @@ platforms:
 - name: centos-5.11
 - name: centos-6.8
 - name: centos-7.2
+
 suites:
 - name: default
   run_list:
   - recipe[yum-repoforge::default]
-
 - name: includerecipe
   run_list:
   - recipe[yum-repoforge-wrapper::default]

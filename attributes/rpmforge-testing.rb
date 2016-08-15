@@ -1,13 +1,8 @@
 default['yum']['rpmforge-testing']['repositoryid'] = 'rpmforge-testing'
 default['yum']['rpmforge-testing']['description'] = 'RHEL $releasever - RPMforge.net - testing'
-case platform_version.to_i
-when 5
-  default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el5/mirrors-rpmforge-testing'
-when 6, 2013, 2014, 2015, 2016
-  default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-testing'
-when 7
-  default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el7/mirrors-rpmforge-testing'
-end
+default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el5/mirrors-rpmforge-testing' if node['platform_family'] == 'rhel' && node['platform_version'].to_i == 5
+default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-testing' if node['platform_family'] == 'rhel' && node['platform_version'].to_i == 6
+default['yum']['rpmforge-testing']['mirrorlist'] = 'http://mirrorlist.repoforge.org/el7/mirrors-rpmforge-testing' if node['platform_family'] == 'rhel' && node['platform_version'].to_i == 7
 default['yum']['rpmforge-testing']['enabled'] = false
 default['yum']['rpmforge-testing']['managed'] = false
 default['yum']['rpmforge-testing']['gpgcheck'] = true

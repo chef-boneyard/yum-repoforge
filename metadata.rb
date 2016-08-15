@@ -11,6 +11,6 @@ issues_url 'https://github.com/chef-cookbooks/yum-repoforge/issues' if respond_t
 depends 'yum', '~> 3.2'
 depends 'yum-epel'
 
-%w(amazon centos fedora oracle redhat scientific).each do |os|
+%w(amazon centos oracle redhat scientific).each do |os|
   supports os
 end

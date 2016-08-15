@@ -1,12 +1,16 @@
 # yum-repoforge Cookbook
 [![Build Status](https://travis-ci.org/chef-cookbooks/yum-repoforge.svg?branch=master)](http://travis-ci.org/chef-cookbooks/yum-repoforge) [![Cookbook Version](https://img.shields.io/cookbook/v/yum-repoforge.svg)](https://supermarket.chef.io/cookbooks/yum-repoforge)
 
+The [RepoForge project](http://repoforge.org/) maintains RPM packages for: 
+- Red Hat Enterprise Linux (RHEL) 
+- CentOS 
+- Scientific Linux
+
 The yum-repoforge cookbook takes over management of the default repositoryids used by repoforge. It allows attribute manipulation of `rpmforge`, `rpmforge-extras`, and `rpmforge-testing`
 
 ## Requirements
 ### Platforms
 - RHEL/CentOS and derivatives
-- Fedora
 
 ### Chef
 - Chef 11+
