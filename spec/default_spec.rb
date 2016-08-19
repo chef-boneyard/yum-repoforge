@@ -4,9 +4,9 @@ describe 'yum-repoforge::default' do
   context 'yum-repoforge::default uses default attributes' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
-        node.set['yum']['rpmforge']['managed'] = true
-        node.set['yum']['rpmforge-extras']['managed'] = true
-        node.set['yum']['rpmforge-testing']['managed'] = true
+        node.normal['yum']['rpmforge']['managed'] = true
+        node.normal['yum']['rpmforge-extras']['managed'] = true
+        node.normal['yum']['rpmforge-testing']['managed'] = true
       end.converge(described_recipe)
     end
 
