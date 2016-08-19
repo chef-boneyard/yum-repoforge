@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+## UNRELEASED v0.7.1 
+- Fix support for Amazon 2016 releases
+- Remove bats integration testing
+
 ## v0.7.0 (2016-04-27)
 
 - Add support for Amazon 2016 releases to the extras repo
