@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'yum-repoforge::default' do
   context 'yum-repoforge::default uses default attributes' do
-    let(:chef_run) do
+    cached(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
         node.normal['yum']['rpmforge']['managed'] = true
         node.normal['yum']['rpmforge-extras']['managed'] = true
