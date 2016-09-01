@@ -14,3 +14,5 @@ depends 'yum-epel'
 %w(amazon centos oracle redhat scientific).each do |os|
   supports os
 end
+
+chef_version '>= 11' if respond_to?(:chef_version)
