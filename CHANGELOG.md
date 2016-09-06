@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+## 1.0.0 (2016-09-06)
+- Add chef_version to the metadata
+- Testing updates
+- Remove Chef 11 support
+
 ## v0.7.1 (2016-08-18)
 
 - Fix support for Amazon 2016 releases
