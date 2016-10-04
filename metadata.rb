@@ -8,11 +8,11 @@ version '1.0.0'
 source_url 'https://github.com/chef-cookbooks/yum-repoforge'
 issues_url 'https://github.com/chef-cookbooks/yum-repoforge/issues'
 
-depends 'yum', '>= 3.2', '< 5.0'
+depends 'compat_resource', '>= 12.14.1'
 depends 'yum-epel'
 
 %w(amazon centos oracle redhat scientific).each do |os|
   supports os
 end
 
-chef_version '>= 12'
+chef_version '>= 12.1'
