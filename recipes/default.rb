@@ -1,6 +1,7 @@
 #
 # Author:: Sean OMeara (<someara@chef.io>)
-# Recipe:: yum-repoforge::default
+# Recipe:: default
+# Cookbook:: yum-repoforge
 #
 # Copyright:: 2013-2016, Chef Software, Inc.
 #
