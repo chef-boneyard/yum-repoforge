@@ -2,17 +2,25 @@
 
 This file is used to list changes made in each version of the yum-repoforge cookbook.
 
+## 3.0.0 (2018-02-16)
+
+- Require Chef 12.14+ and remove compat_resource dep
+- Use a SPDX compliant license string
+- Resolve ChefSpec warnings
+
 ## 2.0.1 (2016-12-22)
 
 - Depend on the latest compat_resource cookbook
 - Cookstyle fixes
 
 ## 2.0.0 (2016-11-26)
+
 - Replace yum dependency with compat_resource
 - Use a working URL for the GPG key
 - Test with inspec
 
 ## 1.0.0 (2016-09-06)
+
 - Add chef_version to the metadata
 - Testing updates
 - Remove Chef 11 support
