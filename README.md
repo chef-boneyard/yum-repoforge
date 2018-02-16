@@ -18,11 +18,10 @@ The yum-repoforge cookbook takes over management of the default repositoryids us
 
 ### Chef
 
-- Chef 12.1+
+- Chef 12.14+
 
 ### Cookbooks
 
-- compat_resource
 - yum-epel
 
 ## Attributes
